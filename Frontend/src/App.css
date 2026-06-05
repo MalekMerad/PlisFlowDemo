@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* RTL Support for Charts */
+.rtl .recharts-wrapper {
+  direction: ltr !important;
+}
+
+.rtl .recharts-cartesian-axis-line,
+.rtl .recharts-cartesian-axis-tick-line {
+  direction: ltr !important;
+}
+
+/* Fix for Y-axis in RTL */
+.rtl .recharts-yAxis .recharts-cartesian-axis-tick-value {
+  direction: ltr !important;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+/* Adjust bar chart labels spacing */
+.recharts-bar-rectangles {
+  direction: ltr !important;
+}

@@ -1,0 +1,53 @@
+{
+  "name": "comission_overt_app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^4.4.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.18",
+    "arabic-persian-reshaper": "^1.0.1",
+    "bidi-js": "^1.0.3",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.24",
+    "i18next": "^25.8.4",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "i18next-http-backend": "^3.0.2",
+    "jspdf": "^3.0.4",
+    "jspdf-autotable": "^5.0.2",
+    "lucide-react": "^0.562.0",
+    "outlet": "^0.1.5",
+    "react": "^19.2.4",
+    "react-datepicker": "^9.1.0",
+    "react-dom": "^19.2.4",
+    "react-i18next": "^16.5.4",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.5.3",
+    "react-toastify": "^11.0.5",
+    "recharts": "^3.8.1",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "vite": "^6.3.1"
+  }
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.cjs";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    @apply transition-colors duration-200 bg-slate-50 text-slate-900;
+}
+
+html.dark body {
+    @apply bg-slate-950 text-slate-100;
+}
+
+/* Custom Scrollbar for the whole app */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-slate-200 dark:bg-slate-800 rounded-full hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors;
+}

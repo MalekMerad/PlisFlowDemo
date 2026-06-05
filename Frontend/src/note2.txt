@@ -1,0 +1,31 @@
+CREATE FUNCTION dbo.GetAdminByEmail (@email NVARCHAR(255))
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT TOP (1)
+        id,
+        email
+    FROM admins
+    WHERE email = @email
+);
+
+-------------------------------------------------------
+CREATE PROCEDURE ResetAdminPassword
+    @adminId INT,
+    @hashedPassword NVARCHAR(255)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    UPDATE admins
+    SET password = @hashedPassword
+    WHERE id = @adminId;
+END;
+
+--------------------------------------------------------
+add sur config:
+JWT_RESETTOKEN=(اخدم واحد)
+EMAIL_USER=entreprise829@gmail.com
+EMAIL_PASS=ikyqttxnzzgzwnwl
+FRONT_URL=http://localhost:5173
